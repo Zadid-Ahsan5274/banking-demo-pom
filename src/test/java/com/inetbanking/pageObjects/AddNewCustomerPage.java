@@ -13,7 +13,8 @@ public class AddNewCustomerPage {
 
     WebDriver driver;
 
-    @FindBy(xpath = "/html/body/div[3]/div/ul/li[2]/a")
+    //@FindBy(xpath = "/html/body/div[3]/div/ul/li[2]/a")
+    @FindBy(partialLinkText = "New Customer")
     @CacheLookup
     WebElement lnkAddNewCustomer;
 
@@ -53,6 +54,10 @@ public class AddNewCustomerPage {
     @CacheLookup
     WebElement txtEmailId;
 
+    @FindBy(name = "password")
+    @CacheLookup
+    WebElement txtPassword;
+
     @FindBy(name = "sub")
     @CacheLookup
     WebElement btnSubmit;
@@ -90,11 +95,11 @@ public class AddNewCustomerPage {
     }
 
     public void enterState(String customer_state){
-        txtCity.sendKeys(customer_state);
+        txtState.sendKeys(customer_state);
     }
 
     public void enterPin(String customer_pin){
-        txtCity.sendKeys(customer_pin);
+        txtPIN.sendKeys(customer_pin);
     }
 
     public void enterMobile(String customer_mobile){
@@ -103,6 +108,11 @@ public class AddNewCustomerPage {
 
     public void enterEmailID(String email){
         txtEmailId.sendKeys(email);
+    }
+
+    public void enterPassword(String pwd){
+        txtPassword.clear();
+        txtPassword.sendKeys(pwd);
     }
 
     public void clickSubmit(){
