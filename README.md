@@ -15,7 +15,7 @@
 ## Prerequisites
 - Java and Maven installed and set path to your system's environment variable
 - Visit this link: https://demo.guru99.com/ and provide an email to get manager credentials.
-https://user-images.githubusercontent.com/82231014/206620715-9048fb11-0b7b-4229-b24a-c78b4981775a.mp4
+https://user-images.githubusercontent.com/82231014/206621060-8f055c33-8024-448e-bf6f-db8de603131b.mp4
 
 ## How to run this project
 - Clone this project
