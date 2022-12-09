@@ -6,6 +6,7 @@
 - Intellij IDEA
 - Selenium(Web Automation Tool)
 - TestNG(Automation Test Framework)
+- Apache POI(Data Driven Framework)
 - Extent Report(Reporting Utility)
 
 ## Scenario of this project
